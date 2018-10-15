@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE manifesto SYSTEM "Manifesto.dtd">
 <manifesto> 
 	<meta>
 		<identificador>
-			TP3
+			TP4
 		</identificador>
 		<titulo>
-			Trabalho pratico 3
+			Trabalho pratico 4
 		</titulo>
 		<subtitulo>
-			The Quran
+			NodeJS 1
 		</subtitulo>
 		<inicio>
-			25/09/2018
+			15/10/2018
 		</inicio>
 		<fim>
-			25/09/2018
+			15/10/2018
 		</fim>
 		<supervisor>
 			<nome>
@@ -33,29 +32,17 @@
 			</nome>
 			<email>luismrbouca@gmail.com</email>
 			<identificador>PG38933</identificador>
-			<website>www.linkedin.com/in/luisbouca/</website>
+			<website>https://github.com/luisbouca/</website>
 		</membro>
 	</equipa>
 	<resumo>
 		<para>
-			Este trabalho consiste em desevolver um XSL para o xml escolhido, no meu caso o Quran, de forma a criar um website que contenha um indice de navegação entre capitulos, usando o "result document" para gerar os ficheiros.
+			Este trabalho consiste em desevolver um servidor node.js que utilize o website desenvolvido em ambiente de aula e o torne num website que funcione no servidor quando alguem tentar aceder a este.
 		</para>
 	</resumo>
 	<resultados>
-		<resultado url="manifesto.xml">
-			Manifesto(XML)
-		</resultado>
-		<resultado url="manifesto.html">
-			Manifesto(HTML)
-		</resultado>
-		<resultado url="Quran.xml">
-			Quran(XML)
-		</resultado>
-		<resultado url="Quran.xsl">
-			Quran(XSL)
-		</resultado>
-		<resultado url="website\index.html">
-			Quran(HTML)
+		<resultado url="https://github.com/luisbouca/DesenvolvimentoWeb/tree/master/TP4">
+			Servidor Node.js
 		</resultado>
 	</resultados>
 </manifesto>
