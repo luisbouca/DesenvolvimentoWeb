@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifesto> 
+	<meta>
+		<identificador>
+			TP4
+		</identificador>
+		<titulo>
+			Trabalho pratico 4
+		</titulo>
+		<subtitulo>
+			NodeJS 1
+		</subtitulo>
+		<inicio>
+			15/10/2018
+		</inicio>
+		<fim>
+			15/10/2018
+		</fim>
+		<supervisor>
+			<nome>
+				José Carlos Ramalho
+			</nome>
+			<email>jcr@di.uminho.pt</email>
+			<website>www.di.uminho.pt/~jcr</website>
+		</supervisor>
+	</meta>
+	<equipa >
+		<membro>
+			<nome>
+				Luis Manuel Ribeiro Bouça
+			</nome>
+			<email>luismrbouca@gmail.com</email>
+			<identificador>PG38933</identificador>
+			<website>https://github.com/luisbouca/</website>
+		</membro>
+	</equipa>
+	<resumo>
+		<para>
+			Este trabalho consiste em desevolver um servidor node.js que utilize o website desenvolvido em ambiente de aula e o torne num website que funcione no servidor quando alguem tentar aceder a este.
+		</para>
+	</resumo>
+	<resultados>
+		<resultado url="https://github.com/luisbouca/DesenvolvimentoWeb/tree/master/TP4">
+			Servidor Node.js
+		</resultado>
+	</resultados>
+</manifesto>

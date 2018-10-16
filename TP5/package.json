@@ -1,0 +1,20 @@
+{
+  "name": "tp5",
+  "version": "1.0.0",
+  "description": "Indice de Obras musicais",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Obras",
+    "musicais",
+    "Indice"
+  ],
+  "author": "Luis Bouça",
+  "license": "ISC",
+  "dependencies": {
+    "pug": "^2.0.3"
+  }
+}

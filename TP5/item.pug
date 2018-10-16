@@ -1,0 +1,62 @@
+extends layout
+
+block corpo
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-light-grey
+                h1= item.titulo
+            .w3-container
+                .w3-show-inline-block
+                    .w3-bar.w3-light-grey
+                        a(href="/index").w3-bar-item.w3-button.w3-dark-grey Voltar
+                table.w3-table.w3-bordered
+                    tr
+                        th Titulo
+                        td= item.titulo
+                    tr
+                        th Compositor
+                        td= item.compositor
+                    tr
+                        th Tipo
+                        td= item.tipo
+                    if item.arranjo
+                        tr
+                            th Arranjo
+                            td= item.arranjo
+                    if item.instrumentos
+                        tr
+                            th(colspan=2 style="text-align:center") Instrumentos
+                        tr
+                            td
+                                each inst in item.instrumentos
+                                    tr
+                                        td(colspan=2)
+                                            <br>
+                                            table.w3-table.w3-border.w3-centered
+                                                tr.w3-light-grey
+                                                    th(colspan=4) Nome
+                                                tr
+                                                    td(colspan=4)= inst.nome
+                                                tr.w3-light-grey
+                                                    th(colspan=4) Partitura
+                                                tr.w3-light-grey
+                                                    if inst.partitura.clave
+                                                        th Clave
+                                                    if inst.partitura.voz
+                                                        th Voz
+                                                    if inst.partitura.afinacao
+                                                        th Afinação
+                                                    th Ficheiro
+                                                tr
+                                                    if inst.partitura.clave
+                                                        td= inst.partitura.clave
+                                                    if inst.partitura.voz
+                                                        td= inst.partitura.voz
+                                                    if inst.partitura.afinacao
+                                                        td= inst.partitura.afinacao
+                                                    td
+                                                        a(href="/"+inst.partitura.path) Visualizar PDF
+                                            <br>
+            .w3-show-inline-block
+                .w3-bar.w3-light-grey
+                    a(href="/index").w3-bar-item.w3-button.w3-dark-grey Voltar

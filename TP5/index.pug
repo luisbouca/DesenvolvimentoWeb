@@ -1,0 +1,17 @@
+extends layout
+
+block corpo
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-light-grey
+                h1 Registo de Obras Musicais
+            .w3-container
+                table.w3-table.w3-bordered.w3-centered.w3-striped
+                    tr
+                        th Id
+                        th Titulo
+                    each item in obras
+                        tr
+                            td= item.id
+                            td
+                                a(href='http:\/\/localhost:85\/obra\/'+ item.id)= item.titulo
