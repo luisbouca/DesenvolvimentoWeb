@@ -3,19 +3,19 @@
 <manifesto> 
 	<meta>
 		<identificador>
-			TP4
+			TP5
 		</identificador>
 		<titulo>
-			Trabalho pratico 4
+			Trabalho pratico 5
 		</titulo>
 		<subtitulo>
-			NodeJS 1
+			NodeJS 2
 		</subtitulo>
 		<inicio>
-			15/10/2018
+			16/10/2018
 		</inicio>
 		<fim>
-			15/10/2018
+			22/10/2018
 		</fim>
 		<supervisor>
 			<nome>
@@ -37,11 +37,12 @@
 	</equipa>
 	<resumo>
 		<para>
-			Este trabalho consiste em desevolver um servidor node.js que utilize o website desenvolvido em ambiente de aula e o torne num website que funcione no servidor quando alguem tentar aceder a este.
+			Este trabalho consiste em desevolver um servidor node.js que utilize os ficheiros json fornecidos pelo docente e atravez de PUG os torne num website.
+			Sendo que o index.json consiste numa lista de todos os ficheiros json(os quais contem informação detalhada sobre uma dada obra musical) com o id referente a este como forma de faciliar a geração do indice na forma de html.
 		</para>
 	</resumo>
 	<resultados>
-		<resultado url="https://github.com/luisbouca/DesenvolvimentoWeb/tree/master/TP4">
+		<resultado url="https://github.com/luisbouca/DesenvolvimentoWeb/tree/master/TP5">
 			Servidor Node.js
 		</resultado>
 	</resultados>
