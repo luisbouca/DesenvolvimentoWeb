@@ -1,0 +1,38 @@
+extends layout
+
+block corpo
+    .w3-container
+        .w3-card-4
+            if item.completo
+                header.w3-container.w3-green
+                    h3.w3-text-black Detalhes da Tarefa
+            else
+                header.w3-container.w3-red
+                    h3.w3-text-black Detalhes da Tarefa
+
+            .w3-container.w3-grey
+                a(href='/lista').w3-button.w3-black voltar para a lista
+                table.w3-table-all
+                    tr
+                        th Data de Registo
+                        td= item.registo
+                    tr
+                        th Prazo limite
+                        td= item.prazo
+                    tr
+                        th Descrição
+                        td= item.descricao
+                    tr
+                        th Tipo
+                        td= item.tipo
+                    tr
+                        th Prioridade
+                        td= item.prioridade
+                    tr
+                        th Completado
+                        if item.completo
+                            td Sim
+                        else
+                            td Não
+            footer.w3-container.w3-light-grey
+                address Gerado por PubsApp
