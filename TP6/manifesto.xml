@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifesto> 
+	<meta>
+		<identificador>
+			TP6
+		</identificador>
+		<titulo>
+			Trabalho pratico 6
+		</titulo>
+		<subtitulo>
+			NodeJS 3
+		</subtitulo>
+		<inicio>
+			23/10/2018
+		</inicio>
+		<fim>
+			29/10/2018
+		</fim>
+		<supervisor>
+			<nome>
+				José Carlos Ramalho
+			</nome>
+			<email>jcr@di.uminho.pt</email>
+			<website>www.di.uminho.pt/~jcr</website>
+		</supervisor>
+	</meta>
+	<equipa >
+		<membro>
+			<nome>
+				Luis Manuel Ribeiro Bouça
+			</nome>
+			<email>luismrbouca@gmail.com</email>
+			<identificador>PG38933</identificador>
+			<website>https://github.com/luisbouca/</website>
+		</membro>
+	</equipa>
+	<resumo>
+		<para>
+			Este trabalho consiste em desevolver um servidor node.js utilizando os conhecimentos lecionados na aula de dia 23 de outubro para criar uma lista de tarefas que guarde os seus dados num ficheiro json.
+		</para>
+		<para>
+			Alem dos componentes basicos de criar e eliminar, o servidor que desonvolvi tambem possibilita que o seu utilizador marque uma tarefa como efetuada, e que o utilizador visualize ou todas as tarefas(incluindo as eliminadas), ou apenas as não eliminadas.
+		</para>
+	</resumo>
+	<resultados>
+		<resultado url="https://github.com/luisbouca/DesenvolvimentoWeb/tree/master/TP6">
+			Servidor Node.js
+		</resultado>
+	</resultados>
+</manifesto>

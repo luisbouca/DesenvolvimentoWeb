@@ -2,14 +2,15 @@
   "name": "tp6",
   "version": "1.0.0",
   "description": "Trabalho pratico 6",
-  "main": "server3.js",
+  "main": "server.js",
   "dependencies": {
     "jsonfile": "^5.0.0",
     "pug": "^2.0.3"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "node server3.js"
+    "test": "node server.js",
+    "s": "node server.js"
   },
   "author": "luis",
   "license": "ISC"
