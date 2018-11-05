@@ -70,19 +70,6 @@ app.get('/w3.css',(req,res)=>{
     });
 })
 
-/*app.get('/Uploads/:file',(req,res)=>{
-    var regexImg = /.*((\.jpg)|(\.png)|(\.gif)|(\.jpeg))/
-    var file = req.params.file
-    if(regexImg.test(file)){
-        res.end(pug.renderFile('image.pug',{path: "file:///"+__dirname+"\\Upload\\"+file}));
-    }else {//if(regexWeb.test(file))
-        fs.readFile("Upload/"+file,'utf8',(err,data)=>{
-            res.write(data);
-            res.end();
-        });
-    }
-})*/
-
 app.post('/processaForm',(req,res)=>{
     var form = new formidable.IncomingForm()
     form.parse(req, (err, fields, files)=>{
