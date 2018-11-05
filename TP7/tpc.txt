@@ -1,0 +1,16 @@
+APP:
+    Receber e armazenar ficheiros
+    servidor :
+        GET
+            / => formulario de upload de ficheiros
+            /ficheiros => print do catalogo
+                os ficheiros são links para os ficheiros
+        POST
+            /processaForm   
+                guardar o ficheiro
+                acrescentar uma entrada no catalogo json
+                Responder ...
+
+Extra:
+    Numa só pagina
+        

@@ -1,0 +1,38 @@
+extends layout
+
+block corpo
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-blue
+                h3 Ficheiro
+            .w3-container.w3-margin
+                a(href='/ficheiros').w3-button.w3-black voltar para a lista
+                if !item.hidden
+                    table.w3-table-all
+                        tr
+                            th.w3-grey Ficheiro
+                            td= item.name
+                        tr
+                            th.w3-grey Descrição
+                            td= item.desc
+                        tr
+                            th.w3-grey Data de upload
+                            td= item.uploadDate
+                        tr
+                            th.w3-grey Ações
+                            td
+                                a(href="../"+item.path,target="_blank").w3-button.w3-black Abrir Ficheiro
+                else
+                    table.w3-table-all
+                        tr
+                            th.w3-grey Ficheiro
+                            td= item.name
+                        tr
+                            th.w3-grey Descrição
+                            td= item.desc
+                        tr
+                            th.w3-grey Data de upload
+                            td= item.uploadDate
+                    p.w3-red.w3-bold Este Ficheiro foi Removido
+            footer.w3-container.w3-light-grey
+                address Gerado por PubsApp
