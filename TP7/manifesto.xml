@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifesto> 
+	<meta>
+		<identificador>
+			TP7
+		</identificador>
+		<titulo>
+			Trabalho pratico 7
+		</titulo>
+		<subtitulo>
+			NodeJS 4
+		</subtitulo>
+		<inicio>
+			23/10/2018
+		</inicio>
+		<fim>
+			29/10/2018
+		</fim>
+		<supervisor>
+			<nome>
+				José Carlos Ramalho
+			</nome>
+			<email>jcr@di.uminho.pt</email>
+			<website>www.di.uminho.pt/~jcr</website>
+		</supervisor>
+	</meta>
+	<equipa >
+		<membro>
+			<nome>
+				Luis Manuel Ribeiro Bouça
+			</nome>
+			<email>luismrbouca@gmail.com</email>
+			<identificador>PG38933</identificador>
+			<website>https://github.com/luisbouca/</website>
+		</membro>
+	</equipa>
+	<resumo>
+		<para>
+			Este trabalho consiste em desevolver um servidor node.js utilizando os conhecimentos lecionados na aula de forma a que este seja capaz de receber ficheiros e criar uma lista destes que guarde os seus dados num ficheiro json.
+		</para>
+	</resumo>
+	<resultados>
+		<resultado url="https://github.com/luisbouca/DesenvolvimentoWeb/tree/master/TP7">
+			Servidor Node.js
+		</resultado>
+	</resultados>
+</manifesto>
