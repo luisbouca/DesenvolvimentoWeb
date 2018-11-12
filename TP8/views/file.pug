@@ -1,0 +1,13 @@
+tr.w3-grey
+    th Ficheiro
+    th(colspan = '3') Ações
+each item, index in items
+    if !item.hidden
+        tr
+            td= item.name
+            td
+                a(href=item.path,target="_blank").w3-button.w3-black Abrir Ficheiro
+            td
+                button#details.w3-button.w3-black Ver Detalhes
+            td
+                button#hide.w3-button.w3-black Remover

@@ -1,0 +1,30 @@
+extends layout
+
+block content
+	.w3-container
+		.w3-card-4.w3-light-blue
+			header.w3-container
+			h3 FileUploader (TP8)
+		.w3-container.w3-light-grey
+			form.w3-container(id='form')
+				fieldset
+					label
+						b Nome
+					input.w3-input.w3-border.w3-margin(type='text' name='name')
+					label
+						b Descrição
+					input.w3-input.w3-border.w3-margin(type='text' name='desc')
+					label
+						b Ficheiro
+					input.w3-input.w3-border.w3-margin(type='file' name='ficheiro')
+					button.w3-button.w3-round-large.w3-blue(id="add") Adicionar Ficheiro
+			.w3-container
+				button.w3-button.w3-round-large.w3-blue(id="refresh") Recarregar Lista
+				button.w3-button.w3-round-large.w3-blue(id="clear") Limpar Lista
+				table.w3-table-all(id='files')
+					tr.w3-grey
+						th Ficheiro
+						th Descrição
+						th(colspan = '3') Ações
+		footer.w3-container.w3-black
+			address Gerado por AjaxApp
