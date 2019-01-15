@@ -1,0 +1,35 @@
+extends layout
+
+block content
+	.w3-container
+		.w3-card-4
+			header.w3-container.w3-blue
+				h3= title
+			.w3-container.w3-light-grey
+				a(href="./").w3-black.w3-button.w3-margin-top Voltar para o indice
+				if data.parent
+					a(href="./"+data.parent).w3-black.w3-button.w3-margin-left.w3-margin-top Regressar ao pai
+				table.w3-table-all
+					tr
+						th.w3-blue Codigo
+						td= data.classe.codigo
+					tr
+						th.w3-blue Titulo
+						td= data.classe.titulo
+					tr
+						th.w3-blue Status
+						td= data.classe.status
+					tr
+						th.w3-blue Descrição
+						td= data.classe.desc
+					if data.childs[0]
+						tr
+							th.w3-blue Descendentes
+							td
+								each item, index in data.childs
+									ul
+										li
+											a(href="./"+item.codigo)= item.codigo
+
+			footer.w3-container.w3-light-grey
+				address Copyright @ Luis Bouca - PG38933 DWeb2018
