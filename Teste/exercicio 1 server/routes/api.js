@@ -23,15 +23,9 @@ router.get('/Compositores/Periodo/:periodo', function(req, res, next) {
 /* GET users listing. */
 router.get('/Compositores/Periodo/:periodo/Nascimento', function(req, res, next) {
   if(typeof req.query.year !== 'undefined') {
-    if(typeof req.query.month !== 'undefined' && typeof req.query.day !== 'undefined'){
-      Compositores.getByPeriodoNasc(req.params.periodo,req.query.year,req.query.month,req.query.day)
-        .then(data => res.jsonp(data))
-        .catch(err => res.status(500).jsonp(err))
-    }else{
       Compositores.getByPeriodoNasc(req.params.periodo,req.query.year)
         .then(data => res.jsonp(data))
         .catch(err => res.status(500).jsonp(err))
-    }
   }
 });
 
